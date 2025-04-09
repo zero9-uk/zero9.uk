@@ -41,19 +41,19 @@ export default function Header() {
             className="mx-3 filter grayscale"
           />
 
-          <Link href="/learn">Learn</Link>
+          <Link href="https://learn.zero9.uk">Learn</Link>
           <Link href="/about">About</Link>
         </nav>
 
         {/* Right: Social Icons (desktop only) */}
         <div className="hidden md:flex items-center gap-5 text-base">
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube" className="relative -top-[1px]">
+          <a href="https://www.youtube.com/@JamesHarcourt" target="_blank" aria-label="YouTube" className="relative -top-[1px]">
             <FaYoutube />
           </a>
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram" className="relative -top-[1px]">
+          <a href="https://instagram.com/zero9.uk" target="_blank" aria-label="Instagram" className="relative -top-[1px]">
             <FaInstagram />
           </a>
-          <a href="https://soundcloud.com" target="_blank" aria-label="SoundCloud" className="relative -top-[1px]">
+          <a href="https://soundcloud.com/jamesharcourt" target="_blank" aria-label="SoundCloud" className="relative -top-[1px]">
             <FaSoundcloud />
           </a>
           <a href="https://spotify.com" target="_blank" aria-label="Spotify" className="relative -top-[1px]">
