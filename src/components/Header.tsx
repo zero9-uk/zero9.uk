@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full h-[64px] px-6 flex items-center justify-between text-zero9-text font-founders text-sm tracking-wide uppercase">
+      <header className="z-50 w-full h-[64px] px-6 flex items-center justify-between text-zero9-text font-founders text-sm tracking-wide uppercase fixed top-0 left-0 bg-white">
         {/* Left: Text Logo */}
         <div className="flex items-center">
           <Link href="/">
