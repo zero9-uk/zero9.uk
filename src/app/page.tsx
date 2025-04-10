@@ -10,7 +10,7 @@ export default function Page() {
     const paths = logoRef.current?.querySelectorAll('path');
     if (!paths) return;
 
-    const timelines = Array.from(paths).map((path, i) => {
+    const timelines = Array.from(paths).map((path) => {
       return gsap.to(path, {
         x: () => gsap.utils.random(-40, 40),
         y: 0, // lock vertical movement
