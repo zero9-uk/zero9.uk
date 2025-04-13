@@ -47,7 +47,7 @@ export default function Header() {
 
         {/* Right: Social Icons (desktop only) */}
         <div className="hidden md:flex items-center gap-5 text-base">
-          <a href="https://www.youtube.com/@JamesHarcourt" target="_blank" aria-label="YouTube" className="relative -top-[1px]">
+          <a href="https://www.youtube.com/@zero9-uk" target="_blank" aria-label="YouTube" className="relative -top-[1px]">
             <FaYoutube />
           </a>
           <a href="https://instagram.com/zero9.uk" target="_blank" aria-label="Instagram" className="relative -top-[1px]">
