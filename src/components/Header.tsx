@@ -82,9 +82,7 @@ export default function Header() {
         <div className="fixed inset-0 z-50 bg-white text-black flex flex-col items-center justify-center gap-8 font-founders uppercase text-lg">
           <Link href="/releases" onClick={() => setMenuOpen(false)}>Releases</Link>
           <Link href="/shop" onClick={() => setMenuOpen(false)}>Podcasts</Link>
-          // <Link href="/events" onClick={() => setMenuOpen(false)}>Events</Link>
           <Link href="/learn" onClick={() => setMenuOpen(false)}>Learn</Link>
-          // <Link href="/samples" onClick={() => setMenuOpen(false)}>Samples</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
         </div>
       )}
