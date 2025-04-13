@@ -7,34 +7,37 @@ type Release = {
 };
 
 const releases: Release[] = [
-  {
-    id: 'release3',
-    title: 'ZERO9003',
-    image: '/releases/zero9003.png',
-  },
-  {
-    id: 'release2',
-    title: 'ZERO9002',
-    image: '/releases/zero9002.png',
-  },
+  // {
+    // id: 'release3',
+    // title: 'ZERO9003',
+    // image: '/releases/zero9003.png',
+  // },
+  // {
+    // id: 'release2',
+    // title: 'ZERO9002',
+    // image: '/releases/zero9002.png',
+  // },
   {
     id: 'release1',
     title: 'ZERO9001',
     image: '/releases/zero9001.png',
-  }
+  },
 ];
 
 export default function ReleasesPage() {
   return (
-    <div className="pt-[80px] px-6 pb-12 bg-white min-h-screen text-black flex justify-center">
+    <div className="pt-[80px] px-6 pb-12 bg-white min-h-screen text-black">
       <div
-        className={`grid gap-8 w-full max-w-[1400px] ${
+        className={`grid gap-6 w-full h-full max-h-[90vh] mx-auto ${
           releases.length === 1
             ? 'grid-cols-1'
             : releases.length === 2
             ? 'grid-cols-1 sm:grid-cols-2'
             : 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3'
         }`}
+        style={{
+          maxWidth: '90vw',
+        }}
       >
         {releases.map((release) => (
           <div key={release.id} className="flex flex-col items-center w-full">
