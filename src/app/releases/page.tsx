@@ -39,8 +39,7 @@ export default function ReleasesPage() {
           width: '100%',
         }}
       >
-        {releases.length === 1 ? (
-          {/* If there's only one release, we limit its width and height to prevent it from stretching too much */}
+        {releases.length === 1 ? (          
           <div
             key={releases[0].id}
             className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
