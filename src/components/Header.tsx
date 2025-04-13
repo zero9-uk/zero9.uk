@@ -8,7 +8,6 @@ import {
   FaInstagram,
   FaSoundcloud,
   FaSpotify,
-  FaTiktok,
   FaFacebook,
 } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
@@ -59,7 +58,7 @@ export default function Header() {
           <a href="https://open.spotify.com/playlist/3SXexZuNWQp0ZvcvocgoET" target="_blank" aria-label="Spotify" className="relative -top-[1px]">
             <FaSpotify />
           </a>
-          <a href="https://facebook.com" target="https://www.facebook.com/zero9.label" aria-label="Facebook" className="relative -top-[1px]">
+          <a href="https://www.facebook.com/zero9.label" target="_blank" aria-label="Facebook" className="relative -top-[1px]">
             <FaFacebook />
           </a>
         </div>
