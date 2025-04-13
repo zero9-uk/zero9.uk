@@ -8,19 +8,19 @@ type Release = {
 
 const releases: Release[] = [
   {
-    id: 'release1',
-    title: 'ZERO9001',
-    image: '/releases/zero9001.png',
+    id: 'release3',
+    title: 'zero9003',
+    image: '/releases/zero9003.png',
   },
   {
     id: 'release2',
-    title: 'ZERO9002',
+    title: 'zero9002',
     image: '/releases/zero9002.png',
   },
   {
-    id: 'release3',
-    title: 'ZERO9003',
-    image: '/releases/zero9003.png',
+    id: 'release1',
+    title: 'ZERO9001',
+    image: '/releases/zero9001.png',
   },
 ];
 
