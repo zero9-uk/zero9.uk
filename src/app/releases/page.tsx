@@ -1,5 +1,6 @@
 'use client';
 
+//hi
 type Release = {
   id: string;
   title: string;
