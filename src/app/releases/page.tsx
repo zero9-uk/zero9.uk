@@ -1,7 +1,12 @@
 'use client';
 
+type Release = {
+  id: string;
+  title: string;
+  image: string;
+};
 
-const releases = [
+const releases: Release[] = [
   {
     id: 'release1',
     title: 'ZERO9001',
