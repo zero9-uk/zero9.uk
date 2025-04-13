@@ -53,10 +53,10 @@ export default function Header() {
           <a href="https://instagram.com/zero9.uk" target="_blank" aria-label="Instagram" className="relative -top-[1px]">
             <FaInstagram />
           </a>
-          <a href="https://soundcloud.com/jamesharcourt" target="_blank" aria-label="SoundCloud" className="relative -top-[1px]">
+          <a href="https://soundcloud.com/zero9-uk" target="_blank" aria-label="SoundCloud" className="relative -top-[1px]">
             <FaSoundcloud />
           </a>
-          <a href="https://spotify.com" target="_blank" aria-label="Spotify" className="relative -top-[1px]">
+          <a href="https://open.spotify.com/playlist/3SXexZuNWQp0ZvcvocgoET" target="_blank" aria-label="Spotify" className="relative -top-[1px]">
             <FaSpotify />
           </a>
           <a href="https://tiktok.com" target="_blank" aria-label="TikTok" className="relative -top-[1px]">
