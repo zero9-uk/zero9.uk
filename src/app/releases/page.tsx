@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image'; // Import the Image component
+import Image from 'next/image'; 
 
 type Release = {
   id: string;
@@ -33,9 +33,9 @@ export default function ReleasesPage() {
         className="grid gap-8 w-full mx-auto justify-center items-start"
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', // Dynamically scales to multiple columns
-          gridAutoRows: 'minmax(300px, 1fr)', // Prevent row heights from shrinking
-          justifyItems: 'center', // Centers each grid item horizontally
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridAutoRows: 'minmax(300px, 1fr)',
+          justifyItems: 'center',
           width: '100%',
         }}
       >
@@ -45,8 +45,8 @@ export default function ReleasesPage() {
             key={releases[0].id}
             className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
             style={{
-              maxWidth: '600px', // Limit width when there's only one item
-              maxHeight: '600px', // Limit height when there's only one item
+              maxWidth: '600px',
+              maxHeight: '600px',
             }}
           >
             <Image
