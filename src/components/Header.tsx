@@ -81,8 +81,8 @@ export default function Header() {
       {menuOpen && (
         <div className="fixed inset-0 z-50 bg-white text-black flex flex-col items-center justify-center gap-8 font-founders uppercase text-lg">
           <Link href="/releases" onClick={() => setMenuOpen(false)}>Releases</Link>
-          <Link href="/shop" onClick={() => setMenuOpen(false)}>Podcasts</Link>
-          <Link href="/learn" onClick={() => setMenuOpen(false)}>Learn</Link>
+          <Link href="/shop" onClick={() => setMenuOpen(false)}>Shop</Link>
+          <Link href="https://learn.zero9.uk" onClick={() => setMenuOpen(false)}>Learn</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
         </div>
       )}
