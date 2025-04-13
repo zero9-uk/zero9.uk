@@ -1,6 +1,7 @@
 'use client';
 
-//hi
+import Image from 'next/image'; // Import the Image component
+
 type Release = {
   id: string;
   title: string;
@@ -39,7 +40,7 @@ export default function ReleasesPage() {
         }}
       >
         {releases.length === 1 ? (
-          // If there's only one release, we limit its width and height to prevent it from stretching too much
+          {/* If there's only one release, we limit its width and height to prevent it from stretching too much */}
           <div
             key={releases[0].id}
             className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
@@ -48,15 +49,12 @@ export default function ReleasesPage() {
               maxHeight: '600px', // Limit height when there's only one item
             }}
           >
-            <img
+            <Image
               src={releases[0].image}
               alt={releases[0].title}
-              className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-              style={{
-                objectFit: 'cover',
-                width: '100%',
-                height: '100%',
-              }}
+              layout="fill"
+              objectFit="cover"
+              className="transition-transform duration-500 hover:scale-105"
             />
           </div>
         ) : (
@@ -69,15 +67,12 @@ export default function ReleasesPage() {
                 maxHeight: '100%',
               }}
             >
-              <img
+              <Image
                 src={release.image}
                 alt={release.title}
-                className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                style={{
-                  objectFit: 'cover',
-                  width: '100%',
-                  height: '100%',
-                }}
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-500 hover:scale-105"
               />
             </div>
           ))
