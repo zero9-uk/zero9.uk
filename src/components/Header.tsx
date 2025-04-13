@@ -59,10 +59,7 @@ export default function Header() {
           <a href="https://open.spotify.com/playlist/3SXexZuNWQp0ZvcvocgoET" target="_blank" aria-label="Spotify" className="relative -top-[1px]">
             <FaSpotify />
           </a>
-          <a href="https://tiktok.com" target="_blank" aria-label="TikTok" className="relative -top-[1px]">
-            <FaTiktok />
-          </a>
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook" className="relative -top-[1px]">
+          <a href="https://facebook.com" target="https://www.facebook.com/zero9.label" aria-label="Facebook" className="relative -top-[1px]">
             <FaFacebook />
           </a>
         </div>
