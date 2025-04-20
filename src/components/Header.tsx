@@ -40,7 +40,7 @@ export default function Header() {
             className="mx-3 filter grayscale"
           />
 
-          <Link href="https://learn.zero9.uk">Learn</Link>
+          <Link target="_blank" href="https://learn.zero9.uk">Learn</Link>
           <Link href="/about">About</Link>
         </nav>
 
@@ -78,7 +78,7 @@ export default function Header() {
         <div className="fixed inset-0 z-50 bg-white text-black flex flex-col items-center justify-center gap-8 font-founders uppercase text-lg">
           <Link href="/releases" onClick={() => setMenuOpen(false)}>Releases</Link>
           <Link href="/shop" onClick={() => setMenuOpen(false)}>Shop</Link>
-          <Link href="https://learn.zero9.uk" onClick={() => setMenuOpen(false)}>Learn</Link>
+          <Link href="https://learn.zero9.uk" target="_blank" onClick={() => setMenuOpen(false)}>Learn</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
         </div>
       )}
