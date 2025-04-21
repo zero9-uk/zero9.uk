@@ -18,7 +18,7 @@ const releases: Release[] = [
     id: 'release2',
     title: 'ZERO9002',
     image: '/releases/zero9002.png',
-  }*/,
+  },*/
   {
     id: 'release1',
     title: 'ZERO9001',
