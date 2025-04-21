@@ -5,7 +5,7 @@ export type Product = {
   description: string;
   isService: boolean;
   price: number | string;
-  pft: string;
+  pdf?: string;
 };
 
 export const products: Product[] = [
