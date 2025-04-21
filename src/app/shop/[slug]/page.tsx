@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import { products } from '../products';
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
   const product = products.find((p) => p.slug === slug);
   if (!product) return notFound();
@@ -23,7 +23,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </p>
         )}
 
-        {/* Show image only if there’s no PDF (e.g. merch or vinyl) */}
         {!isPdfOnly && (
           <img
             src={product.image}
@@ -32,7 +31,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           />
         )}
 
-        {/* Show PDF embed only if product has one */}
         {product.pdf && (
           <iframe
             src={product.pdf}
