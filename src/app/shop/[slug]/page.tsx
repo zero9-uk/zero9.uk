@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { products, Product } from '../products';
 
-export default async function ProductPage({ params }: { params: { slug: string } }) {
+export default function ProductPage({ params }: { params: { slug: string } })
   const { slug } = params;
 
   const product: Product | undefined = products.find((p) => p.slug === slug);
