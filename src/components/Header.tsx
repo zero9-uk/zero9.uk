@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="z-50 w-full h-[64px] px-6 flex items-center justify-between text-zero9-text font-founders text-sm tracking-wide uppercase fixed top-0 left-0 bg-white">
-        {/* Left: Text Logo */}
+      <header className="z-50 w-full h-[64px] px-6 fixed top-0 left-0 bg-white text-zero9-text font-founders text-sm tracking-wide uppercase flex items-center justify-between">
+        {/* Left side: text logo */}
         <div className="flex items-center">
           <Link href="/">
             <span className="text-2xl font-semibold tracking-[0.2em] uppercase leading-none">
@@ -27,24 +27,28 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Center: Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-xs leading-none">
-          <Link href="/releases">Releases</Link>
-          <Link href="/shop">Shop</Link>
+        {/* Center nav block: full center alignment using absolute + transform */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <nav className="hidden md:flex items-center gap-6 text-xs leading-none">
+            <Link href="/releases">Releases</Link>
+            <Link href="/shop">Shop</Link>
 
-          <Image
-            src="/ZeroNine-logoonly.svg"
-            alt="ZERO9 Icon"
-            height={17}
-            width={17}
-            className="mx-3 filter grayscale"
-          />
+            <Link href="/">
+              <Image
+                src="/ZeroNine-logoonly.svg"
+                alt="ZERO9 Icon"
+                height={17}
+                width={17}
+                className="mx-3 filter grayscale"
+              />
+            </Link>
 
-          <Link href="https://learn.zero9.uk">Learn</Link>
-          <Link href="/about">About</Link>
-        </nav>
+            <Link target="_blank" href="https://learn.zero9.uk">Learn</Link>
+            <Link href="/about">About</Link>
+          </nav>
+        </div>
 
-        {/* Right: Social Icons (desktop only) */}
+        {/* Right: Social Icons */}
         <div className="hidden md:flex items-center gap-5 text-base">
           <a href="https://www.youtube.com/@zero9-uk" target="_blank" aria-label="YouTube" className="relative -top-[1px]">
             <FaYoutube />
@@ -78,7 +82,7 @@ export default function Header() {
         <div className="fixed inset-0 z-50 bg-white text-black flex flex-col items-center justify-center gap-8 font-founders uppercase text-lg">
           <Link href="/releases" onClick={() => setMenuOpen(false)}>Releases</Link>
           <Link href="/shop" onClick={() => setMenuOpen(false)}>Shop</Link>
-          <Link href="https://learn.zero9.uk" onClick={() => setMenuOpen(false)}>Learn</Link>
+          <Link href="https://learn.zero9.uk" target="_blank" onClick={() => setMenuOpen(false)}>Learn</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
         </div>
       )}
