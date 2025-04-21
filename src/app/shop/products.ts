@@ -1,4 +1,14 @@
-export const products = [
+export type Product = {
+  slug: string;
+  title: string;
+  image: string;
+  description: string;
+  isService: boolean;
+  price: number | string;
+  pft: string;
+};
+
+export const products: Product[] = [
   {
     slug: 'studio-services',
     title: 'Studio/Production Services',
