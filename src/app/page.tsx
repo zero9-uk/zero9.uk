@@ -1,8 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-
 export default function HomePage() {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-white overflow-hidden">
