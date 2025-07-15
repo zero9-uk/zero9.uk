@@ -1,29 +1,28 @@
 'use client';
 
-import Image from 'next/image'; 
+import Image from 'next/image';
 
 type Release = {
   id: string;
   title: string;
   image: string;
+  url: string;
 };
 
 const releases: Release[] = [
-/*  {
-    id: 'release3',
-    title: 'ZERO9003',
-    image: '/releases/zero9003.jpg',
-  },
-  {
-    id: 'release2',
-    title: 'ZERO9002',
-    image: '/releases/zero9002.jpg',
-  },*/
   {
     id: 'release1',
     title: 'ZERO9001',
     image: '/releases/zero9001.jpg',
+    url: 'https://ffm.to/xejekv3',
   },
+  // Future releases:
+  // {
+  //   id: 'release2',
+  //   title: 'ZERO9002',
+  //   image: '/releases/zero9002.jpg',
+  //   url: 'https://ffm.to/...',
+  // },
 ];
 
 export default function ReleasesPage() {
@@ -39,9 +38,12 @@ export default function ReleasesPage() {
           width: '100%',
         }}
       >
-        {releases.length === 1 ? (          
-          <div
+        {releases.length === 1 ? (
+          <a
             key={releases[0].id}
+            href={releases[0].url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
             style={{
               maxWidth: '600px',
@@ -55,11 +57,14 @@ export default function ReleasesPage() {
               objectFit="cover"
               className="transition-transform duration-500 hover:scale-105"
             />
-          </div>
+          </a>
         ) : (
           releases.map((release) => (
-            <div
+            <a
               key={release.id}
+              href={release.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
               style={{
                 maxWidth: '100%',
@@ -73,7 +78,7 @@ export default function ReleasesPage() {
                 objectFit="cover"
                 className="transition-transform duration-500 hover:scale-105"
               />
-            </div>
+            </a>
           ))
         )}
       </div>
