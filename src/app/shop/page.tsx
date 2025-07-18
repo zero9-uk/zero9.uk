@@ -3,6 +3,10 @@
 import Link from 'next/link';
 import { products } from './products';
 
+function isExternalLink(href: string): boolean {
+  return href.startsWith('http://') || href.startsWith('https://');
+}
+
 export default function ShopPage() {
   const hasProducts = products.length > 0;
   const centerGrid = products.length < 3;
@@ -18,43 +22,35 @@ export default function ShopPage() {
           }`}
         >
           {products.map((product) => {
-            const isExternal = !!product.payhipUrl;
-            const Wrapper = isExternal ? 'a' : Link;
-            const wrapperProps = isExternal
-              ? {
-                  href: product.payhipUrl,
-                  target: '_blank',
-                  rel: 'noopener noreferrer',
-                }
-              : {
-                  href: `/shop/${product.slug}`,
-                };
+            const href = product.payhipUrl || `/shop/${product.slug}`;
+            const external = isExternalLink(href);
 
             return (
-              <Wrapper
-                key={product.slug}
-                {...wrapperProps}
-                className="flex flex-col items-center max-w-[400px] w-full"
-              >
-                <div className="relative bg-[#f7f7f7] aspect-square w-full overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    onError={(e) => {
-                      e.currentTarget.src = '/shop/placeholder.png';
-                    }}
-                    className="object-contain w-full h-full transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <div className="w-full mt-2 text-sm sm:text-base font-founders tracking-wide flex justify-between items-center">
-                  <span>{product.title}</span>
-                  <span>
-                    {typeof product.price === 'number'
-                      ? `£${product.price.toFixed(2)}`
-                      : product.price}
-                  </span>
-                </div>
-              </Wrapper>
+              <Link key={product.slug} href={href} passHref>
+                <a
+                  className="flex flex-col items-center max-w-[400px] w-full"
+                  {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  <div className="relative bg-[#f7f7f7] aspect-square w-full overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      onError={(e) => {
+                        e.currentTarget.src = '/shop/placeholder.png';
+                      }}
+                      className="object-contain w-full h-full transition-transform duration-500 hover:scale-105"
+                    />
+                  </div>
+                  <div className="w-full mt-2 text-sm sm:text-base font-founders tracking-wide flex justify-between items-center">
+                    <span>{product.title}</span>
+                    <span>
+                      {typeof product.price === 'number'
+                        ? `£${product.price.toFixed(2)}`
+                        : product.price}
+                    </span>
+                  </div>
+                </a>
+              </Link>
             );
           })}
         </div>
