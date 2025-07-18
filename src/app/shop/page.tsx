@@ -14,24 +14,25 @@ export default function ShopPage() {
   return (
     <div className="pt-[80px] px-6 pb-12 bg-white min-h-screen text-black">
       {hasProducts ? (
-        <div
-          className={`grid gap-8 mx-auto w-full ${
-            centerGrid ? 'place-items-center' : ''
-          } grid-cols-1 ${products.length >= 2 ? 'sm:grid-cols-2' : ''} ${
-            products.length >= 3 ? 'md:grid-cols-3' : ''
-          }`}
-        >
+		<div
+		  className={`grid gap-8 justify-center w-full px-4 ${
+			centerGrid ? 'max-w-2xl' : 'max-w-6xl'
+		  } mx-auto grid-cols-1 ${
+			products.length >= 2 ? 'sm:grid-cols-2' : ''
+		  } ${products.length >= 3 ? 'md:grid-cols-3' : ''}`}
+		>
+
           {products.map((product) => {
             const href = product.payhipUrl || `/shop/${product.slug}`;
             const external = isExternalLink(href);
 
             return (
-              <Link key={product.slug} href={href} passHref>
+              <Link key={product.slug} href={href} legacyBehavior>
                 <a
                   className="flex flex-col items-center max-w-[400px] w-full"
                   {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 >
-                  <div className="relative bg-[#f7f7f7] aspect-square w-full overflow-hidden">
+                  <div className="relative bg-[#f7f7f7] aspect-square w-full overflow-hidden flex items-center justify-center p-2 sm:p-4">
                     <img
                       src={product.image}
                       alt={product.title}
