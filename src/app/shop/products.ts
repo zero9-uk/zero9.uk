@@ -12,7 +12,7 @@ export type Product = {
 export const products: Product[] = [
   {
     slug: 'studio-services',
-    title: 'Studio/Production Services',
+    title: 'Production Services',
     image: '/shop/studio-services.png',
     description: 'View full rate card.',
 	isService: true, // Optional flag if needed
@@ -21,7 +21,7 @@ export const products: Product[] = [
   },
   {
     slug: 'z9001-looppack',
-    title: 'Studio/Loop Pack Z9001',
+    title: 'Z9001 Loop Pack',
     image: '/shop/Z9001-loop-pack.jpg',
     description: 'Buy Now.',
 	isService: false, // Optional flag if needed
