@@ -15,7 +15,7 @@ export default function ShopPage() {
     <div className="pt-[80px] px-6 pb-12 bg-white min-h-screen text-black">
       {hasProducts ? (
 		<div
-		  className={`grid gap-8 justify-center w-full px-4 ${
+		  className={`grid gap-x-12 gap-y-8 justify-center w-full px-4 ${
 			centerGrid ? 'max-w-2xl' : 'max-w-6xl'
 		  } mx-auto grid-cols-1 ${
 			products.length >= 2 ? 'sm:grid-cols-2' : ''
