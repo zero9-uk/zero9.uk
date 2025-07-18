@@ -6,6 +6,7 @@ export type Product = {
   isService: boolean;
   price: number | string;
   pdf?: string;
+  payhipUrl?: string;
 };
 
 export const products: Product[] = [
