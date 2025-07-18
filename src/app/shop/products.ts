@@ -18,6 +18,16 @@ export const products: Product[] = [
     price: 'from £25 p/h',
 	pdf: '/shop/ratecard2025.pdf'
   },
+  {
+    slug: 'z9001-looppack',
+    title: 'Studio/Loop Pack Z9001',
+    image: '/shop/Z9001-loop-pack.jpg',
+    description: 'Buy Now.',
+	isService: false, // Optional flag if needed
+    price: '£5',
+	payhipUrl: 'https://payhip.com/b/eLKf6' // <- Replace this with your real link
+
+  },
   // {
     // slug: 'zero9-tshirt',
     // title: 'ZERO9 T-Shirt',
