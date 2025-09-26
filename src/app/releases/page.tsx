@@ -15,6 +15,12 @@ const releases: Release[] = [
     title: 'ZERO9001',
     image: '/releases/zero9001.jpg',
     url: 'https://ffm.to/xejekv3',
+  },  
+  {
+    id: 'release2',
+    title: 'ZERO9002',
+    image: '/releases/zero9002.jpg',
+    url: 'https://tr.ee/iMF8gWzPfH',
   },
   // Future releases:
   // {
