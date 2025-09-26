@@ -20,7 +20,7 @@ const releases: Release[] = [
     id: 'release2',
     title: 'ZERO9002',
     image: '/releases/zero9002.jpg',
-    url: 'https://tr.ee/iMF8gWzPfH',
+    url: 'https://ffm.to/4xbqkn4',
   },
   // Future releases:
   // {
@@ -34,16 +34,14 @@ const releases: Release[] = [
 export default function ReleasesPage() {
   return (
     <div className="pt-[80px] px-6 pb-12 bg-white min-h-screen text-black">
-      <div
-        className="grid gap-8 w-full mx-auto justify-center items-start"
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gridAutoRows: 'minmax(300px, 1fr)',
-          justifyItems: 'center',
-          width: '100%',
-        }}
-      >
+		<div
+		  className="
+			grid gap-8 mx-auto justify-center
+			w-[min(90rem,90vw)]  /* don't let the grid get wider than ~1440px or 90vw */
+			auto-rows-auto
+			[grid-template-columns:repeat(auto-fit,minmax(300px,500px))]
+		  "
+		>
         {releases.length === 1 ? (
           <a
             key={releases[0].id}
@@ -66,25 +64,20 @@ export default function ReleasesPage() {
           </a>
         ) : (
           releases.map((release) => (
-            <a
-              key={release.id}
-              href={release.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
-              style={{
-                maxWidth: '100%',
-                maxHeight: '100%',
-              }}
-            >
-              <Image
-                src={release.image}
-                alt={release.title}
-                layout="fill"
-                objectFit="cover"
-                className="transition-transform duration-500 hover:scale-105"
-              />
-            </a>
+			<a
+			  key={release.id}
+			  href={release.url}
+			  target="_blank"
+			  rel="noopener noreferrer"
+			  className="relative bg-[#f7f7f7] p-[3px] aspect-square w-full"
+			>
+			  <Image
+				src={release.image}
+				alt={release.title}
+				fill
+				className="object-cover transition-transform duration-500 hover:scale-105"
+			  />
+			</a>
           ))
         )}
       </div>
