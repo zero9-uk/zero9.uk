@@ -47,7 +47,7 @@ export default function ReleasesPage() {
       <Script src="https://w.soundcloud.com/player/api.js" strategy="afterInteractive" />
 
       <div className="grid gap-8 mx-auto justify-center w-[min(90rem,90vw)] auto-rows-auto [grid-template-columns:repeat(auto-fit,minmax(300px,500px))]">
-        {releases.map((r, idx) => (
+        {releases.map((r) => (
           <div key={r.id} className="w-full">
             {/* Artwork tile (unchanged) */}
             <a
