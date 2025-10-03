@@ -16,7 +16,7 @@ export const products: Product[] = [
     image: '/shop/Z9001-loop-pack.jpg',
     description: 'Buy Now.',
 	isService: false, // Optional flag if needed
-    price: '£5',
+    price: '£2.50',
 	payhipUrl: 'https://payhip.com/b/eLKf6' // <- Replace this with your real link
 
   },
