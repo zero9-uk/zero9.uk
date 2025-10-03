@@ -21,15 +21,7 @@ function formatReleaseDate(iso: string) {
   }).replace(",", "");
 }
 
-const releases: Release[] = [
-  {
-    id: "release1",
-    ffm: "https://ffm.to/xejekv3",
-    imageSrc: "/releases/zero9001.jpg",
-    imageAlt: "ZERO9001",
-    scUrl: "https://soundcloud.com/zero9-uk/sets/james-harcourt-aesthesis-ep-z9001",
-    releaseDate: "2025-07-11",
-  },
+const releases: Release[] = [  
   {
     id: "release2",
     ffm: "https://ffm.to/4xbqkn4",
@@ -37,6 +29,14 @@ const releases: Release[] = [
     imageAlt: "ZERO9002",
     scUrl: "https://soundcloud.com/zero9-uk/sets/gabriel-atlas-true-neptune-ep-z9002",
     releaseDate: "2025-09-19",
+  },
+  {
+    id: "release1",
+    ffm: "https://ffm.to/xejekv3",
+    imageSrc: "/releases/zero9001.jpg",
+    imageAlt: "ZERO9001",
+    scUrl: "https://soundcloud.com/zero9-uk/sets/james-harcourt-aesthesis-ep-z9001",
+    releaseDate: "2025-07-11",
   },
 ];
 
