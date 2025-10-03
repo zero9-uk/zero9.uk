@@ -11,15 +11,6 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    slug: 'studio-services',
-    title: 'Production Services',
-    image: '/shop/studio-services.png',
-    description: 'View full rate card.',
-	isService: true, // Optional flag if needed
-    price: 'from £25 p/h',
-	pdf: '/shop/ratecard2025.pdf'
-  },
-  {
     slug: 'z9001-looppack',
     title: 'Z9001 Loop Pack',
     image: '/shop/Z9001-loop-pack.jpg',
@@ -29,6 +20,16 @@ export const products: Product[] = [
 	payhipUrl: 'https://payhip.com/b/eLKf6' // <- Replace this with your real link
 
   },
+  {
+    slug: 'studio-services',
+    title: 'Production Services',
+    image: '/shop/studio-services.png',
+    description: 'View full rate card.',
+	isService: true, // Optional flag if needed
+    price: 'from £25 p/h',
+	pdf: '/shop/ratecard2025.pdf'
+  },
+ 
   // {
     // slug: 'zero9-tshirt',
     // title: 'ZERO9 T-Shirt',
