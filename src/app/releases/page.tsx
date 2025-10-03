@@ -71,7 +71,7 @@ export default function ReleasesPage() {
 			<details className="group mt-3 w-full text-center">
 			  <summary
 				className="list-none cursor-pointer mx-auto w-fit inline-flex items-center justify-center gap-2 text-xs tracking-wide text-black/70 hover:text-black"
-				aria-label={`Toggle player for ${r.title}`}
+				aria-label={`Toggle player for ${r.imageAlt}`}
 			  >
 				<span className="uppercase tracking-widest text-[11px]">
 				  {formatReleaseDate(r.releaseDate)}
