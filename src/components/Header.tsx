@@ -39,7 +39,7 @@ export default function Header() {
                 alt="ZERO9 Icon"
                 height={17}
                 width={17}
-                className="mx-3 filter grayscale"
+                className="mx-3 filter brightness-0"
               />
             </Link>
 
