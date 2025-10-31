@@ -11,6 +11,14 @@ export type Product = {
 
 export const products: Product[] = [
   {
+    slug: 'zero9-cap-2025',            // used for /shop/zero9-cap-2025 (works with your Link logic)
+    title: 'ZERO9 Basecall Cap',
+    image: '/shop/baseballcap-2025.jpg',
+	description: 'Buy Now.',
+    price: '£30',                         
+    payhipUrl: 'https://payhip.com/b/E5nMX'
+  },
+  {
     slug: 'z9001-looppack',
     title: 'Z9001 Loop Pack',
     image: '/shop/Z9001-loop-pack.jpg',
@@ -23,7 +31,7 @@ export const products: Product[] = [
   {
     slug: 'studio-services',
     title: 'Production Services',
-    image: '/shop/studio-services.png',
+    image: '/shop/zero9-logo.jpg',
     description: 'View full rate card.',
 	isService: true, // Optional flag if needed
     price: 'from £25 p/h',
