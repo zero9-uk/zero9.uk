@@ -15,6 +15,7 @@ export const products: Product[] = [
     title: 'ZERO9 Basecall Cap',
     image: '/shop/baseballcap-2025.jpg',
 	description: 'Buy Now.',
+	isService: false,	
     price: '£30',                         
     payhipUrl: 'https://payhip.com/b/E5nMX'
   },
