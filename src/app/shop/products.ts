@@ -32,7 +32,7 @@ export const products: Product[] = [
   {
     slug: 'studio-services',
     title: 'Production Services',
-    image: '/shop/zero9-logo.jpg',
+    image: '/shop/zero9-productionservices.jpg',
     description: 'View full rate card.',
 	isService: true, // Optional flag if needed
     price: 'from £25 p/h',
