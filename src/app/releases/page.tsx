@@ -25,9 +25,9 @@ const releases: Release[] = [
   {
     id: "release4",
     ffm: "",
-    imageSrc: "/releases/zero9004.jpg",
+    imageSrc: "https://ffm.to/rw6n9ry",
     imageAlt: "ZERO9004",
-    scUrl:"",
+    scUrl:"https://soundcloud.com/zero9-uk/sets/blood-moon-z9004",
     releaseDate: "2026-02-06",
   },
   {
