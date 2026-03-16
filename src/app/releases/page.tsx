@@ -23,6 +23,14 @@ function formatReleaseDate(iso: string) {
 
 const releases: Release[] = [  
   {
+    id: "release5",
+    ffm: "https://ffm.to/n7xmbqy",
+    imageSrc: "/releases/zero9005.jpg",
+    imageAlt: "ZERO9005",
+    scUrl:"https://soundcloud.com/zero9-uk/sets/poseidon-z9005x",
+    releaseDate: "2026-03-06",
+  },
+  {
     id: "release4",
     ffm: "https://ffm.to/rw6n9ry",
     imageSrc: "/releases/zero9004.jpg",
