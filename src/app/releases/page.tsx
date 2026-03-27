@@ -82,14 +82,8 @@ export default function ReleasesPage() {
       <div className="grid gap-8 mx-auto justify-center w-[min(90rem,90vw)] auto-rows-auto [grid-template-columns:repeat(auto-fit,minmax(300px,500px))]">
         {releases.map((r) => (
           <div key={r.id} className="w-full">
-            {/* Artwork tile — linked only when ffm is available */}
             {r.ffm ? (
-              
-                href={r.ffm}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full"
-              >
+              <a href={r.ffm} target="_blank" rel="noopener noreferrer" className="block w-full">
                 <div className="relative w-full aspect-square bg-[#f7f7f7] p-[3px]">
                   <Image
                     src={r.imageSrc}
@@ -112,7 +106,6 @@ export default function ReleasesPage() {
               </div>
             )}
 
-            {/* Collapsible minimal player */}
             <details className="group mt-3 w-full text-center">
               <summary
                 className="list-none cursor-pointer mx-auto w-fit inline-flex items-center justify-center gap-2 text-xs tracking-wide text-black/70 hover:text-black"
@@ -127,17 +120,11 @@ export default function ReleasesPage() {
                   fill="none"
                   aria-hidden="true"
                 >
-                  <path
-                    d="M6 9l6 6 6-6"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                  />
+                  <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="1.5" />
                 </svg>
               </summary>
               <div className="mt-2">
-                {r.scUrl && (
-                  <MiniSoundCloud scUrl={r.scUrl} iframeId={`sc-${r.id}`} />
-                )}
+                {r.scUrl && <MiniSoundCloud scUrl={r.scUrl} iframeId={`sc-${r.id}`} />}
               </div>
             </details>
           </div>
