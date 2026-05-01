@@ -26,8 +26,10 @@ function formatReleaseDate(iso: string) {
 const releases: Release[] = [
   {
     id: "releaset01",
+    ffm: "https://ffm.to/transmissions-vol-1",
     imageSrc: "/releases/zero9t01.jpg",
     imageAlt: "ZERO9T01",
+    scUrl: "https://on.soundcloud.com/M3QfirZojuSePtx32Q",
     releaseDate: "2026-05-01",
   },
   {
