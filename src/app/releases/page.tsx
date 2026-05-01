@@ -29,7 +29,7 @@ const releases: Release[] = [
     ffm: "https://ffm.to/transmissions-vol-1",
     imageSrc: "/releases/zero9t01.jpg",
     imageAlt: "ZERO9T01",
-    scUrl: "https://on.soundcloud.com/M3QfirZojuSePtx32Q",
+    scUrl: "https://soundcloud.com/zero9-uk/sets/transmissions-volume-z9t01",
     releaseDate: "2026-05-01",
   },
   {
